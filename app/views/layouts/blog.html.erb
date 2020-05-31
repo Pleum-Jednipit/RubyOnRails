@@ -24,8 +24,6 @@
 
      <%= login_helper %>
 
-    <% if session[:source] %>
-      Thank for visiting <%= session[:source] %>
-    <% end %>
+    <%= source_helper("blog")%>
   </body>
 </html>
