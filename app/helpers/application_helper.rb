@@ -18,6 +18,6 @@ module ApplicationHelper
 	end
 
 	def coypright_generator
-		DevcampViewTool::Renderer.copyright 'Pleum', 'All rights reserved'
+		DevCampViewTool::Renderer.copyright 'Pleum', 'All rights reserved'
 	end
 end
