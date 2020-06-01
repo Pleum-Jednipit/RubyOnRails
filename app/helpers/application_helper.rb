@@ -16,4 +16,8 @@ module ApplicationHelper
       		content_tag(:p, greeting, class: "source-greeting")
     	 end 
 	end
+
+	def coypright_generator
+		DevcampViewTool::Renderer.copyright 'Pleum', 'All rights reserved'
+	end
 end
