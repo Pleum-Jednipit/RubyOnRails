@@ -15,14 +15,14 @@ class PortfoliosController < ApplicationController
 	end	
 
 	def edit
-		@portfolio_item = Portfolio.find(params[:id])
+		set_portfolio_item
 		3.times { @portfolio_item.technologies.build}
 	end	
 
 
 
 	def show
-		@portfolio_item = Portfolio.find(params[:id])
+		set_portfolio_item
 
 	end	
 
@@ -64,6 +64,10 @@ class PortfoliosController < ApplicationController
     											technologies_attributes: [:name]
     											)
 
+		end
+
+		def set_portfolio_item
+			@portfolio_item = Portfolio.find(params[:id])
 		end
   	end
   	
